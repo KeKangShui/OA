@@ -220,7 +220,7 @@ layui.use(['layedit', 'jquery','laydate', 'laypage', 'layer', 'table', 'carousel
 		var data = obj.data 		//获得当前行数据
 		,layEvent = obj.event; 		//获得 lay-event 对应的值
 		if(layEvent === 'edit'){
-			// 为显示的页面进行赋值
+			// 为显示的页面进行赋值；点击处理弹出那个 
 			$('#reportName').val(data.uname2);
 			$('#reportnickName').val(data.unickname2);
 			$('#coverReportName').val(data.uname);

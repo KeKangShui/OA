@@ -74,6 +74,7 @@ public class SysRoleController {
 		List<SysRolePermission> list = new ArrayList<SysRolePermission>();
 		sysRole.setCreateDate(new Date());
 		sysRole = sysRoleService.add(sysRole);
+		
 		if (menuIdList != null && menuIdList.length > 0) {
 			for (String s : menuIdList) {
 				SysRolePermission sp = new SysRolePermission();
